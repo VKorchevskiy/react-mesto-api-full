@@ -1,0 +1,13 @@
+.form__input-text_type_dark-form {
+  border-bottom: 2px solid #CCCCCC;
+  background-color: #000000;;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.form__input-text_type_dark-form:focus {
+  outline: 1px solid #000000;
+}

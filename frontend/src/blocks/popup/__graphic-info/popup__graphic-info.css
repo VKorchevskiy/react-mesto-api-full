@@ -1,0 +1,11 @@
+.popup__graphic-info {
+  height: 120px;
+  width: 120px;
+  margin: 0 auto 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .popup__graphic-info{
+    margin-bottom: 32px;
+  }
+}

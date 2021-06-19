@@ -1,0 +1,13 @@
+.header__menu {
+  height: 24px;
+  width: 24px;
+  background-image: url(../../../images/menu.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+}
