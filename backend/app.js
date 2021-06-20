@@ -1,13 +1,14 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const routes = require('./routes/index');
 const { processingError } = require('./middlewares/processingError');
+const { PORT, MONGODB_URI } = require('./utils/constants');
 
 const app = express();
-const { PORT = 3000 } = process.env;
 
-mongoose.connect('mongodb://localhost:27017/mestodb', {
+mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useFindAndModify: false,

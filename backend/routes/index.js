@@ -14,8 +14,6 @@ router.use(requestLogger);
 router.post('/signin', userValidator, login);
 router.post('/signup', userValidator, createUser);
 
-// router.use(auth);
-
 router.use('/users', auth, userRoutes);
 router.use('/cards', auth, cardRoutes);
 

@@ -2,13 +2,11 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const User = require('../models/user');
+const { JWT_SECRET, SALT_ROUNDS } = require('../utils/constants');
 const NotFoundError = require('../errors/not-found-error');
 const AuthError = require('../errors/auth-error');
 const ConflictError = require('../errors/conflict-error');
 const InvalidDataError = require('../errors/invalid-data-error');
-
-const SALT_ROUNDS = 10;
-const JWT_SECRET = 'super-strong-secret';
 
 const convertUser = (user) => {
   const convertedUser = {
