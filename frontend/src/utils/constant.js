@@ -6,7 +6,7 @@ const formSelectors = {
   errorClass: 'form__input-error_active'
 }
 const cohortId = '';
-const baseUrl = 'mesto.vkorch.nomoredomains.club';
+const baseUrl = 'http://mesto.vkorch.nomoredomains.club';
 
 const optionsApi = {
   urlUserMe: `${baseUrl}${cohortId}/users/me`,
