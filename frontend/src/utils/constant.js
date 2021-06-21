@@ -5,8 +5,8 @@ const formSelectors = {
   inputErrorClass: 'form__input-text_type_error',
   errorClass: 'form__input-error_active'
 }
-const cohortId = 'cohort-21';
-const baseUrl = 'https://mesto.nomoreparties.co/v1/';
+const cohortId = '';
+const baseUrl = 'mesto.vkorch.nomoredomains.club';
 
 const optionsApi = {
   urlUserMe: `${baseUrl}${cohortId}/users/me`,
