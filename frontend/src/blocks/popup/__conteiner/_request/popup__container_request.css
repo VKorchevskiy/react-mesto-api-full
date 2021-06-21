@@ -1,9 +1,0 @@
-.popup__container_request {
-  padding: 50px 18px;
-}
-
-@media screen and (min-width: 768px) {
-  .popup__container_request {
-    padding: 60px 36px;
-  }
-}

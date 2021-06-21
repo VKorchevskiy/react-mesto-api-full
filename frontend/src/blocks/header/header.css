@@ -1,9 +1,0 @@
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
-  max-width: 880px;
-}
