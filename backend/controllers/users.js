@@ -44,9 +44,11 @@ module.exports.getUserById = (req, res, next) => {
     });
 };
 
-module.exports.getCurrentUser = (req, res, next) => User.findOne({ _id: req.user._id })
-  .then((user) => res.status(200).send(convertUser(user)))
-  .catch(next);
+module.exports.getCurrentUser = (req, res, next) => {
+  User.findOne({ _id: req.user._id })
+    .then((user) => res.status(200).send(convertUser(user)))
+    .catch(next);
+};
 
 module.exports.login = (req, res, next) => {
   const { email, password } = req.body;

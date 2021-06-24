@@ -63,7 +63,7 @@ module.exports.createCard = (req, res, next) => {
 
 module.exports.likeCard = (req, res, next) => Card.findByIdAndUpdate(
   req.params.cardId,
-  { $addToSet: { likes: req.user._id } },
+  { $addToSet: { likes: req.user } },
   { new: true },
 )
   .orFail(new NotFoundError('Карточка с указанным _id не найдена.'))

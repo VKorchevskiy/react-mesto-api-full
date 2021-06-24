@@ -11,6 +11,12 @@ const InvalidDataError = require('../errors/invalid-data-error');
 
 router.use(requestLogger);
 
+router.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
+
 router.post('/signin', userValidator, login);
 router.post('/signup', userValidator, createUser);
 
